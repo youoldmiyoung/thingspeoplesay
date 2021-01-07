@@ -9,9 +9,9 @@ from os import environ
 from quotes import listR
 
 CONSUMER_KEY = environ['CONSUMER_KEY']
-CONSUMER_SECRET_KEY = environ['CONSUMER_SECRET_KEY']
+CONSUMER_KEY_SECRET = environ['CONSUMER_KEY_SECRET']
 ACCESS_TOKEN = environ['ACCESS_TOKEN']
-ACCESS_TOKEN_SECRET = ['ACCESS_TOKEN_SECRET']
+ACCESS_TOKEN_SECRET = environ['ACCESS_TOKEN_SECRET']
 
 
 def get_random_quote():
