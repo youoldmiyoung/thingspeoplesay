@@ -11,7 +11,7 @@ from quotes import listR
 CONSUMER_KEY = environ['CONSUMER_KEY']
 CONSUMER_SECRET_KEY = environ['CONSUMER_SECRET_KEY']
 ACCESS_TOKEN = environ['ACCESS_TOKEN']
-ACCESS_TOKEN_SECRET = environ['ACCESS_TOKEN_SECRET']
+ACCESS_TOKEN_SECRET = ['ACCESS_TOKEN_SECRET']
 
 
 def get_random_quote():
@@ -25,7 +25,7 @@ def create_tweet():
 
 
 def tweet_quote():
-    interval = 60*60*12
+    interval = 60*60
 
     auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET_KEY)
     auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
